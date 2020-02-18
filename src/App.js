@@ -16,20 +16,60 @@ function App() {
         <div>
           <nav id='navbar'>
             <ul>
-              <li> <Link to='Header'> <i class="fas fa-home fa-2x header"> </i> </Link> </li>
-              <li> <Link to='About'> <i class="far fa-user fa-2x"> </i> </Link> </li>
-              <li> <Link to='Skills'> <i class="fas fa-cogs fa-2x"> </i> </Link> </li>
-              <li> <Link to='Services'> <i class="far fa-eye fa-2x"> </i> </Link> </li>
-              <li> <Link to='Contact'> <i class="fas fa-envelope fa-2x"> </i> </Link> </li>
+              <li className='container'>
+                <div>
+                  <Link className='icone' to='Header'> <i className="fas fa-home fa-2x"> </i> </Link>
+                  <div className='overlay'>
+                    <Link className='text' to='Header'>Home</Link>
+                  </div>
+                </div>
+              </li>
+
+              <li className='container'> 
+                <div>
+                  <Link className='icone' to='About'> <i className="far fa-user fa-2x"> </i> </Link>
+                  <div className='overlay'>
+                    <Link className='text' to='About'>About</Link>
+                  </div>
+                </div>
+              </li>
+
+              <li className='container'>
+                <div>
+                  <Link className='icone' to='Skills'> <i className="fas fa-cogs fa-2x"> </i> </Link>
+                  <div className='overlay'>
+                    <Link className='text'>Skills</Link>
+                  </div>
+                </div>
+              </li>
+
+              <li className='container'>
+                <div>
+                  <Link className='icone' to='Services'> <i className="far fa-eye fa-2x"> </i> </Link>
+                  <div className='overlay'>
+                    <Link className='text' to='Services'>Services</Link>
+                  </div>
+                </div>
+              </li>
+
+              <li className='container'>
+                <div>
+                  <Link className='icone' to='Contact'> <i className="fas fa-envelope fa-2x"> </i> </Link>
+                  <div className='overlay'>
+                    <Link className='text' to='Contact'>Contact</Link>
+                  </div>
+                </div>
+              </li>
             </ul>
           </nav>
 
           <Switch>
-            <Route path='/Header'> <Header /> </Route>
             <Route path='/About'> <About /> </Route>
             <Route path='/Skills'> <Skills /> </Route>
             <Route path='/Services'> <Services /> </Route>
             <Route path='Contact'> <Contact /> </Route>
+            <Route path='/'> <Header /> </Route>
+
           </Switch>
         </div>
       </Router>

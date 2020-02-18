@@ -1,10 +1,10 @@
 body {
-  background-color: #373737;
+  background-color: #1D1D1D;
   margin: 0px;
 }
 
 #navbar {
-  width: 60px;
+  width: 70px;
   height: 100vh;
   background-color: black;
   position: absolute;
@@ -13,7 +13,7 @@ body {
 
 #navbar ul {
   list-style-type: none;
-  margin-left: -30px;
+  margin-left: -25px;
   margin-top: 350px;
 }
 
@@ -28,11 +28,34 @@ body {
   color: gray;
 }
 
-#navbar ul li i:active {
+#navbar ul li i:hover {
   color: #B8FFE9;
 }
 
-#navbar ul li i .header:hover {
-  content: 'Home';
+.overlay {
+  width: 50px;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container:hover .icone {
+  opacity: 0;
+}
+
+.text {
+  color: #B8FFE9;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-top: -15px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
