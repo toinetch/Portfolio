@@ -1,5 +1,6 @@
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import React from 'react';
+import { AnimatedSwitch } from 'react-router-transition';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Header from './jsx/header';
 import About from './jsx/about';
@@ -16,11 +17,16 @@ function App() {
         <div>
           <nav id='navbar'>
             <ul>
+              <li>
+                <Link to='/'>
+                  <img id='logo2' src='../images/Logo.PNG' alt='logo'/>
+                </Link>
+              </li>
               <li className='container'>
                 <div>
-                  <Link className='icone' to='Header'> <i className="fas fa-home fa-2x"> </i> </Link>
+                  <Link className='icone' to='/'> <i className="fas fa-home fa-2x"> </i> </Link>
                   <div className='overlay'>
-                    <Link className='text' to='Header'>Home</Link>
+                    <Link className='text' to='/'>Home</Link>
                   </div>
                 </div>
               </li>
@@ -38,7 +44,7 @@ function App() {
                 <div>
                   <Link className='icone' to='Skills'> <i className="fas fa-cogs fa-2x"> </i> </Link>
                   <div className='overlay'>
-                    <Link className='text'>Skills</Link>
+                    <Link className='text' to='Skills'>Skills</Link>
                   </div>
                 </div>
               </li>
@@ -63,14 +69,18 @@ function App() {
             </ul>
           </nav>
 
-          <Switch>
+
+          <AnimatedSwitch
+          atEnter={{ opacity: 0 }}
+          atLeave={{ opacity: 0 }}
+          atActive={{ opacity: 1 }}>
+
             <Route path='/About'> <About /> </Route>
             <Route path='/Skills'> <Skills /> </Route>
             <Route path='/Services'> <Services /> </Route>
-            <Route path='Contact'> <Contact /> </Route>
+            <Route path='/Contact'> <Contact /> </Route>
             <Route path='/'> <Header /> </Route>
-
-          </Switch>
+          </AnimatedSwitch>
         </div>
       </Router>
     </>

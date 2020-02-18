@@ -1,9 +1,9 @@
 #menutext {
   color: white;
-  margin: 350px 0 0 250px;
+  margin: 250px 0 0 200px;
   font-size: 36px;
   font-family: Monospace;
-  line-height: 40px;
+  line-height: 100px;
 }
 
 #menutext h1 span {
@@ -20,19 +20,36 @@
   color: #B8FFE9;
 }
 
-#menutext a {
-  text-decoration: none;
-  color: #B8FFE9;
-  border: 2px solid #B8FFE9;
-  padding: 10px;
-  margin: 15px;
-}
-
 #logo {
   width: 450px;
   height: 450px;
-  margin: -400px 0 0 1250px;
+  margin: -1000px 0 0 1250px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+}
+
+.apparait {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 4s steps(60, end);
+          animation: type 4s steps(60, end);
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=header.css.map */
