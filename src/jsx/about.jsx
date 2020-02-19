@@ -1,5 +1,8 @@
 import React from 'react';
 import '../css/about.css';
+import '../../node_modules/bootstrap/dist/js/bootstrap.js';
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+
 
 const About = () => {
     return(
@@ -17,6 +20,12 @@ const About = () => {
                     I like other kind of activities too with personal challenges like skateboarding and playing guitar.</p>
                 </div>
             </div>
+            <div className="container">
+                <div className="side left"><img className='imagepyra' src="../images/css.png" alt="" /></div>
+                <div className="side front"><img className='imagepyra' src="../images/html.png" alt="" /></div>
+                <div className="side right"><img className='imagepyra' src="../images/react.png" alt="" /></div>
+                <div className="side back"><img id='js' src="../images/js.png" alt="" /></div>
+            </div>
         </>
     );
 }
@@ -25,7 +34,7 @@ export default About;
 
 
 
-{/* <div id="carou">
+/* <div id="carou">
 <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
     <div className="carousel-inner">
         <div className="carousel-item active">
@@ -43,4 +52,4 @@ export default About;
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous"></link>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossOrigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossOrigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossOrigin="anonymous"></script> */}
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossOrigin="anonymous"></script> */

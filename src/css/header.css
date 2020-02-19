@@ -23,7 +23,7 @@
 #logo {
   width: 450px;
   height: 450px;
-  margin: -1000px 0 0 1250px;
+  margin: -400px 0 0 1250px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }

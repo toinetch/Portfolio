@@ -22,7 +22,7 @@ function App() {
                   <img id='logo2' src='../images/Logo.PNG' alt='logo'/>
                 </Link>
               </li>
-              <li className='container'>
+              <li className='containers'>
                 <div>
                   <Link className='icone' to='/'> <i className="fas fa-home fa-2x"> </i> </Link>
                   <div className='overlay'>
@@ -31,7 +31,7 @@ function App() {
                 </div>
               </li>
 
-              <li className='container'> 
+              <li className='containers'> 
                 <div>
                   <Link className='icone' to='About'> <i className="far fa-user fa-2x"> </i> </Link>
                   <div className='overlay'>
@@ -40,7 +40,7 @@ function App() {
                 </div>
               </li>
 
-              <li className='container'>
+              <li className='containers'>
                 <div>
                   <Link className='icone' to='Skills'> <i className="fas fa-cogs fa-2x"> </i> </Link>
                   <div className='overlay'>
@@ -49,7 +49,7 @@ function App() {
                 </div>
               </li>
 
-              <li className='container'>
+              <li className='containers'>
                 <div>
                   <Link className='icone' to='Services'> <i className="far fa-eye fa-2x"> </i> </Link>
                   <div className='overlay'>
@@ -58,7 +58,7 @@ function App() {
                 </div>
               </li>
 
-              <li className='container'>
+              <li className='containers'>
                 <div>
                   <Link className='icone' to='Contact'> <i className="fas fa-envelope fa-2x"> </i> </Link>
                   <div className='overlay'>
