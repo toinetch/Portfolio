@@ -1,6 +1,6 @@
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import React from 'react';
-import { AnimatedSwitch } from 'react-router-transition';
+
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Header from './jsx/header';
 import About from './jsx/about';
@@ -69,18 +69,13 @@ function App() {
             </ul>
           </nav>
 
-
-          <AnimatedSwitch
-          atEnter={{ opacity: 0 }}
-          atLeave={{ opacity: 0 }}
-          atActive={{ opacity: 1 }}>
-
+          <Switch>
             <Route path='/About'> <About /> </Route>
             <Route path='/Skills'> <Skills /> </Route>
             <Route path='/Services'> <Services /> </Route>
             <Route path='/Contact'> <Contact /> </Route>
             <Route path='/'> <Header /> </Route>
-          </AnimatedSwitch>
+          </Switch>
         </div>
       </Router>
     </>

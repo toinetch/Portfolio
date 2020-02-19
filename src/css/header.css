@@ -6,7 +6,7 @@
   line-height: 100px;
 }
 
-#menutext h1 span {
+#menutext h1 .lettreColor {
   font-size: 100px;
   font-family: Serif;
   font-style: italic;
