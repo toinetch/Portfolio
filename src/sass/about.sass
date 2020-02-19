@@ -8,6 +8,7 @@
 #contient
     width: 80%
     margin: auto
+    margin-top: 300px
     
     #paragraphe
         width: 50%
@@ -21,9 +22,7 @@ $speed: 5
 .container
     display: flex
     justify-content: flex-end
-    height: 600px
-    margin-top: -400px
-    perspective: 500px
+    align-items: flex-end
     perspective-origin: 50% 40%
     box-sizing: content-box
     &::before,&::after
@@ -31,8 +30,7 @@ $speed: 5
       
 .side
     position: absolute
-    // left: 140px
-    top: 150px
+    top: 350px
     width: 100px
     height: 100px
     border-left: 60px solid transparent
@@ -63,7 +61,7 @@ $speed: 5
     25%
         transform: rotateY(90deg) rotateX(30deg)
         border-bottom-color: darken($color, 5%)
-        opacity: 1
+
     25.1%
         opacity: 0
     50%
@@ -74,7 +72,6 @@ $speed: 5
     75%
         transform: rotateY(270deg) rotateX(30deg)
         border-bottom-color: darken($color, 15%)
-        opacity: 1
     100%
         transform: rotateY(360deg) rotateX(30deg)
         border-bottom-color: lighten($color, 5%)
