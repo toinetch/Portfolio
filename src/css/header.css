@@ -21,9 +21,9 @@
 }
 
 #logo {
-  width: 450px;
-  height: 450px;
-  margin: -400px 0 0 1250px;
+  width: 550px;
+  height: 550px;
+  margin: -400px 0 0 1150px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
