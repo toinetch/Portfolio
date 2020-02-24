@@ -14,7 +14,7 @@ const Header = () => {
                     <span
                     className="txt-rotate"
                     data-period="3000"
-                    data-rotate='[ " coder.", " web developer.", " creative."]'></span>
+                    data-rotate='[ " coder.", " web developer.", " creative.", " geek."]'></span>
                     </h1>
             </div>
             <img id='logo' src='../images/Logo.PNG' alt='Logo A'></img>

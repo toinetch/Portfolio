@@ -1,4 +1,4 @@
-import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css'; 
 import React from 'react';
 
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
@@ -49,14 +49,14 @@ function App() {
                 </div>
               </li>
 
-              <li className='containers'>
+              {/* <li className='containers'>
                 <div>
                   <Link className='icone' to='Services'> <i className="far fa-eye fa-2x"> </i> </Link>
                   <div className='overlay'>
                     <Link className='text' to='Services'>Services</Link>
                   </div>
                 </div>
-              </li>
+              </li> */}
 
               <li className='containers'>
                 <div>

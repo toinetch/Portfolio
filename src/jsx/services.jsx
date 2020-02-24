@@ -1,8 +1,13 @@
 import React from 'react';
+import '../css/services.css';
 
 const Services = () => {
     return(
-        <h1>hello</h1>
+        <>
+            <div>
+                
+            </div>
+        </>
     )
 }
 
