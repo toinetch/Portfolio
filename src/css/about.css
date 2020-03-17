@@ -11,7 +11,6 @@
   margin: auto;
   margin-top: 300px;
 }
-
 #contient #paragraphe {
   width: 50%;
   color: white;
@@ -19,24 +18,14 @@
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-perspective-origin: 50% 40%;
-          perspective-origin: 50% 40%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  justify-content: flex-end;
+  align-items: flex-end;
+  perspective-origin: 50% 40%;
+  box-sizing: content-box;
 }
-
 .container::before, .container::after {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .side {
@@ -47,114 +36,63 @@
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-bottom: 120px solid #ccc;
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: spin 5s infinite linear;
-          animation: spin 5s infinite linear;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  transform-origin: 50% 0%;
+  animation: spin 5s infinite linear;
+  box-sizing: content-box;
 }
-
 .side::after, .side::before {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .back {
-  -webkit-animation-delay: -2.5s;
-          animation-delay: -2.5s;
+  animation-delay: -2.5s;
 }
 
 .right {
-  -webkit-animation-delay: -1.25s;
-          animation-delay: -1.25s;
+  animation-delay: -1.25s;
 }
 
 .left {
-  -webkit-animation-delay: -3.75s;
-          animation-delay: -3.75s;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotateY(0deg) rotateX(30deg);
-            transform: rotateY(0deg) rotateX(30deg);
-    border-bottom-color: rgba(13, 13, 13, 0);
-  }
-  25% {
-    -webkit-transform: rotateY(90deg) rotateX(30deg);
-            transform: rotateY(90deg) rotateX(30deg);
-    border-bottom-color: rgba(0, 0, 0, 0);
-  }
-  25.1% {
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: rotateY(180deg) rotateX(30deg);
-            transform: rotateY(180deg) rotateX(30deg);
-    border-bottom-color: rgba(0, 0, 0, 0);
-  }
-  74.9% {
-    opacity: 0;
-  }
-  75% {
-    -webkit-transform: rotateY(270deg) rotateX(30deg);
-            transform: rotateY(270deg) rotateX(30deg);
-    border-bottom-color: rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg) rotateX(30deg);
-            transform: rotateY(360deg) rotateX(30deg);
-    border-bottom-color: rgba(13, 13, 13, 0);
-  }
+  animation-delay: -3.75s;
 }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotateY(0deg) rotateX(30deg);
-            transform: rotateY(0deg) rotateX(30deg);
+    transform: rotateY(0deg) rotateX(30deg);
     border-bottom-color: rgba(13, 13, 13, 0);
   }
   25% {
-    -webkit-transform: rotateY(90deg) rotateX(30deg);
-            transform: rotateY(90deg) rotateX(30deg);
+    transform: rotateY(90deg) rotateX(30deg);
     border-bottom-color: rgba(0, 0, 0, 0);
   }
   25.1% {
     opacity: 0;
   }
   50% {
-    -webkit-transform: rotateY(180deg) rotateX(30deg);
-            transform: rotateY(180deg) rotateX(30deg);
+    transform: rotateY(180deg) rotateX(30deg);
     border-bottom-color: rgba(0, 0, 0, 0);
   }
   74.9% {
     opacity: 0;
   }
   75% {
-    -webkit-transform: rotateY(270deg) rotateX(30deg);
-            transform: rotateY(270deg) rotateX(30deg);
+    transform: rotateY(270deg) rotateX(30deg);
     border-bottom-color: rgba(0, 0, 0, 0);
   }
   100% {
-    -webkit-transform: rotateY(360deg) rotateX(30deg);
-            transform: rotateY(360deg) rotateX(30deg);
+    transform: rotateY(360deg) rotateX(30deg);
     border-bottom-color: rgba(13, 13, 13, 0);
   }
 }
-
 .imagepyra {
   width: 150px;
   height: 150px;
   opacity: 0.5;
   margin-top: 110px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
-
 .imagepyra::after, .imagepyra::before {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 #js {
@@ -163,12 +101,10 @@
   opacity: 0.5;
   margin-top: 115px;
   margin-left: -55px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
+}
+#js::after, #js::before {
+  box-sizing: content-box;
 }
 
-#js::after, #js::before {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
 /*# sourceMappingURL=about.css.map */

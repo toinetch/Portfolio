@@ -12,7 +12,7 @@ const Skills = () => {
             <div className='disp' id='fronts'>
                 <div className='tex'>
                     <h1>Front-end</h1>
-                    <p className='pi'>Front End Development is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites.</p>
+                    <p className='pi'>Front End Development is building out the visual components of a website. Using HTML5, CSS3, Javascript and React, I build fast, interactive websites.</p>
                 </div>
                 <div id="test" className="rotating">
                     <img className='rotating' src="../images/html.png" alt=""/>
@@ -22,7 +22,7 @@ const Skills = () => {
             <div className='disp' id='backs'>
                 <div className='tex'>
                     <h1>Back-end</h1>
-                    <p className='pi'>Back-end Development refers to the server-side development. It is the term used for the behind-the-scenes activities that happen when performing any action on a website.</p>
+                    <p className='pi'>Back-end Development refers to the server-side development. It is the term used for the behind-the-scenes activities that happen when performing any action on a website with languages as python, MySQL, .</p>
                 </div>
                 <div id="test" className="rotating">
                     <img className='rotating' src="../images/python.png" alt=""/>
@@ -32,7 +32,7 @@ const Skills = () => {
             <div className='disp' id='others'>
                 <div className='tex'>
                     <h1>Other</h1>
-                    <p className='pi'>Other languages I know are always a plus and that's why I always learn new languages. </p>
+                    <p className='pi'>Other languages I know are always a plus and that's why I always learn new languages like C or Python. </p>
                 </div>
                 <div id="test" className="rotating">
                     <img className='rotating' src="../images/github.png" alt=""/>
